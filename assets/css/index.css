@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+body {font-family: 'Inter', sans-serif;}
+/******RESPONSIVE*************/
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+.logoSection img {
+    width: 100px;
+}
+header {
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuWeb {display: none;}
+/****HAMBURGER*****/
+.hamburger {
+    position: relative;
+  }
+  .bar {
+    display: block;
+    width: 20px;
+    height: 5px;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburger .bar:nth-child(3) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    opacity: 1;
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    width: 50%;
+    height: 325px;
+  }
+  .hamburger.active + .modal.active {
+    display: block;
+    z-index: 999;
+    top: 0;
+  } 
+  .modal.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 375px;
+    margin: 0 auto;
+  }
+  .modalTop {
+    display: flex;
+    align-items: center;
+    padding: 28px 24px;
+    ul li {
+        list-style: none;
+    }
+    ul li a{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: normal; 
+        color: #fff;
+    }
+  }
