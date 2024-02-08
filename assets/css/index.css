@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
-body {font-family: 'Inter', sans-serif;}
+body {
+    font-family: 'Inter', sans-serif;
+    transition: 0.5s;
+}
 /******RESPONSIVE*************/
 .container {
     width: 375px;
     margin: 0 auto;
 }
 .logoSection img {
+    margin-left: -20px;
     width: 100px;
 }
 header {
     display: flex;
-    padding: 15px 20px;
+    padding: 5px 9px;
     align-items: center;
     justify-content: space-between;
 }
+/******DARKMODE******/
 
 .menuWeb {display: none;}
 /****HAMBURGER*****/
@@ -46,25 +51,23 @@ header {
     display: none;
     position: fixed;
     width: 50%;
-    height: 325px;
   }
   .hamburger.active + .modal.active {
     display: block;
     z-index: 999;
     top: 0;
+    left: 0;
+    width: 100%;
   } 
   .modal.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
     background-color: rgba(0, 0, 0, 0.65);
-    width: 375px;
     margin: 0 auto;
   }
   .modalTop {
     display: flex;
     align-items: center;
     padding: 28px 24px;
+    justify-content: center;
     ul li {
         list-style: none;
     }
@@ -76,3 +79,41 @@ header {
         color: #fff;
     }
   }
+  /**********ABOUT*************/
+  #about {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px 9px;
+  }
+  .aboutTop {
+    h6 {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: normal; 
+    }
+  }
+  .aboutMid {
+    background: linear-gradient(90deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    h4 {
+        font-size: 46px;
+        font-weight: 500;
+        line-height: normal; 
+    }
+}
+.aboutBot {
+    h5 {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px; /* 133.333% */   
+    }
+}
+.stick {
+    margin-top: 50px;
+    width: 100%;
+    height: 2px;
+    background-color: #C6C6C6;
+}
