@@ -121,10 +121,130 @@ header {
 /**********TABLE EXPERIENCE*****************/
 #experience {
     display: flex;
-    align-items: center;
-    justify-content: start;
+    flex-direction: column;
     padding: 5px 9px;
+    gap: 30px;
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: uppercase;
+      color: #1A1A1A; 
+    }
 }
 .expDetails:not(#details1) {
   display: none;
+}
+.experienceInner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: start;
+  width: 100%;
+}
+.expTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 25%;
+  white-space: nowrap;
+  h6 {
+    text-align: justify;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 133.333% */ 
+  }
+}
+.expDetails {
+  display: flex;
+  flex-direction: column;
+  & .detailsHistory {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      color: #1A1A1A; 
+      font-size: 16px;
+      font-weight: 300;
+      line-height: normal; 
+    }
+  }
+  h4 {
+    color: #004E93; 
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px; /* 171.429% */ 
+  }
+  h5 {
+    color: #1A1A1A; 
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px; /* 150% */ 
+  }
+}
+/************************************************************/
+/**PROJECTS**/
+#projects {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 5px 12px;
+}
+.projectTitle {
+  h4 {
+    color: #1A1A1A; 
+    font-size: 15px;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase; 
+  }
+}
+.projectSections {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.contentText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.textTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h4 {
+    color: #1A1A1A; 
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal; 
+  }
+}
+.contentLinks {
+  display: flex;
+  gap: 19px;
+}
+.textMid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  h5 {
+    color: #1A1A1A; 
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px; /* 150% */ 
+  }
+  h6 {
+    color: #004E93; 
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px; /* 171.429% */ 
+  }
 }
