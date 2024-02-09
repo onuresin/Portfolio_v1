@@ -117,3 +117,45 @@ header {
     height: 2px;
     background-color: #C6C6C6;
 }
+/**********************************************/
+/**********TABLE EXPERIENCE*****************/
+#experience table {
+
+    border-collapse: collapse;
+
+    width: 100%;
+
+  }
+
+
+  #experience th,
+
+  #experience td {
+
+    border: 1px solid #ddd;
+
+    padding: 8px;
+
+  }
+
+
+  #experience tr:nth-child(even) {
+
+    background-color: #f2f2f2;
+
+  }
+
+
+  #experience th {
+
+    padding-top: 12px;
+
+    padding-bottom: 12px;
+
+    text-align: left;
+
+    background-color: #4CAF50;
+
+    color: black;
+
+  }

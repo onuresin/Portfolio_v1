@@ -11,7 +11,6 @@ function toggleMode(mode) {
 
 function applyMode(mode) {
     const body = document.body;
-
     if (mode === 'dark') {
         body.style.backgroundColor = '#333';
     } else {
