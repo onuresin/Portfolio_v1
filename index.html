@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <script src="assets/js/hamburger.js" defer></script>
     <script src="assets/js/darkmode.js" defer></script>
+    <script src="assets/js/jobDetails.js" defer></script>
     <title>onuresin.com.tr</title>
 </head>
 <body>
@@ -56,7 +57,24 @@
             <div class="stick"></div>
         </section>
         <section id="experience">
-           
+            <div class="expTitle">
+                <div class="title" onclick="showDetails('details1')"> <h6>Deneyim 1</h6></div>
+                <div class="title" onclick="showDetails('details2')"> <h6>Deneyim 2</h6></div>
+                <div class="title" onclick="showDetails('details3')"> <h6>Deneyim 3</h6></div>
+                <div class="title" onclick="showDetails('details4')"> <h6>Deneyim 4</h6></div>
+            </div>
+            <div class="expDetails" id="details1">
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, accusamus.</h4>
+            </div>
+            <div class="expDetails" id="details2">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+            </div>
+            <div class="expDetails" id="details3">
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat autem rerum fuga!</h4>
+            </div>
+            <div class="expDetails" id="details4">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cumque earum nemo dolor sequi suscipit repudiandae ipsa illo eum.</h4>
+            </div>
         </section>
         <section id="projects"></section>
         <section id="contact"></section>
