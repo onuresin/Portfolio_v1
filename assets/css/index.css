@@ -3,6 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
     transition: 0.5s;
 }
+
 /******RESPONSIVE*************/
 .container {
     width: 375px;
@@ -19,7 +20,12 @@ header {
     justify-content: space-between;
 }
 /******DARKMODE******/
-
+body.dark-mode {
+  background-color: black;
+  & .logoSection img {
+    content: url(/assets/images/logo-dark.svg);
+  }
+}
 .menuWeb {display: none;}
 /****HAMBURGER*****/
 .hamburger {

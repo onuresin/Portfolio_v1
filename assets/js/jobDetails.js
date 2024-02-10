@@ -20,3 +20,6 @@ function showDetails(titleId, detailId) {
     let selectedDetail = document.getElementById(detailId);
     selectedDetail.style.display = 'block';
 }
+window.onload = function() {
+    showDetails('title1', 'details1');
+}

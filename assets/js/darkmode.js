@@ -1,19 +1,15 @@
-const savedMode = localStorage.getItem('mode')
+const darkModeBtn = document.querySelectorAll(".darkModeBtn");
+const lightModeBtn = document.querySelectorAll(".lightModeBtn");
+const body = document.body
 
-if (savedMode) {
-    applyMode(savedMode);
-}
+darkModeBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        body.classList.add("dark-mode");
+    });
+});
 
-function toggleMode(mode) {
-    applyMode(mode);
-    localStorage.setItem('mode', mode);
-}
-
-function applyMode(mode) {
-    const body = document.body;
-    if (mode === 'dark') {
-        body.style.backgroundColor = '#333';
-    } else {
-        body.style.backgroundColor = '#fff';
-    }
-}
+lightModeBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        body.classList.remove("dark-mode");
+    });
+});
