@@ -369,6 +369,12 @@ body.dark-mode {
         border: none;
       }
     }
+    .menuWeb ul li a {
+      color: #fff;
+    }
+    .menuWeb ul li a:hover {
+      border-bottom: 1px solid #fff;
+    }
   }
   .container {
     width: auto;
@@ -379,6 +385,11 @@ body.dark-mode {
   .innerHeader {
     width: 74%;
     margin: 0 auto;
+    padding:0;
+    padding-block: 40px;
+  }
+  .logoSection img { 
+    width: 17%;
   }
   .modalBot {
     & .darkModeBtn { 
@@ -387,10 +398,25 @@ body.dark-mode {
   }
   .menuWeb {
     display: flex;
+    gap: 30px;
+    
     ul {
       display: flex;
       align-items: center;
+      list-style: none;
+      gap: 30px;
+      li a {
+        text-decoration: none;
+        color: #1A1A1A;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: normal; 
+        cursor: url(/assets/cursor/Pointer.svg), auto;
+      }
     }
   }
-  
+  .menuWeb ul li a:hover {
+    border-bottom: 1px solid #1A1A1A;
+  }
+  .modalBot, .innerHeader img { cursor: url(/assets/cursor/Pointer.svg), auto;}
 }
