@@ -3,8 +3,6 @@ body {
     font-family: 'Inter', sans-serif;
     transition: 0.5s;
 }
-
-/******RESPONSIVE*************/
 .container {
     width: 375px;
     margin: 0 auto;
@@ -21,10 +19,52 @@ header {
 }
 /******DARKMODE******/
 body.dark-mode {
-  background-color: black;
-  & .logoSection img {
+  background-color: #111;
+  .logoSection img {
     content: url(/assets/images/logo-dark.svg);
   }
+  .bar {
+    background-color: #fff;
+  }
+  .modalBot {
+    .darkModeBtn {display: none;}
+    .lightModeBtn {
+      display: block;
+      background-color: white;
+      padding: 5px 8px;
+      border: 2px solid black;
+      border-radius: 30%;
+    }
+  }
+  .modal.active {
+    background-color: rgba(255, 255, 255, 0.65);
+  }
+  .modalTop ul li a {
+    color: #1A1A1A;
+  }
+  .aboutTop h6 {color: #fff;}
+  .aboutBot h5 {color: #F0F0F0;}
+  #experience p{color: #FFF; }
+  .title {border: 1px solid #1F1E1E; h6 {color:#fff};border-radius: 5px;}
+  .selected {background-color: #1F1E1E;color: #fff;}
+  .detailsHistory {
+    h3 {color: #fff;}
+    h2 {color: #C4C4C4;}
+  }
+  .expDetails h5 {color: #C4C4C4;}
+  .projectTitle h4 {color: #fff;}
+  .textTop h4 {color: #FFF;}
+  .textMid h5 {color: #C4C4C4;}
+  .githubLogo img {
+    content: url(/assets/images/github-darkmode.svg);
+  }
+  .directionLink img {content: url(/assets/images/link-darkmode.svg);}
+  #contact h4 {color: #FFF;}
+  .mailBtn img{content: url(/assets/images/mail-dark.svg);}
+  .linkedInBtn img {content: url(/assets/images/linkedin-dark.svg);}
+  .upworkBtn img {content: url(/assets/images/upwork-dark.svg);}
+  .githubBtn img {content: url(/assets/images/github-dark.svg);}
+  .contactLinks a { color: #C4C4C4;}
 }
 .menuWeb {display: none;}
 /****HAMBURGER*****/
@@ -83,6 +123,21 @@ body.dark-mode {
         font-weight: 300;
         line-height: normal; 
         color: #fff;
+    }
+  }
+  .modalBot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 2px;
+    & .lightModeBtn {
+        display: none;
+    }
+    & .darkModeBtn {
+      background-color: white;
+      padding: 5px 8px;
+      border: 2px solid black;
+      border-radius: 30%;
     }
   }
   /**********ABOUT*************/
@@ -151,6 +206,7 @@ body.dark-mode {
 .title {
   padding: 5px 9px;
   border: 1px solid black;
+  border-radius: 5px;
 }
 .selected {
   background-color: #000;
@@ -177,7 +233,7 @@ body.dark-mode {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    h3 {
+    h3, h2 {
       color: #1A1A1A; 
       font-size: 16px;
       font-weight: 300;
@@ -269,7 +325,9 @@ body.dark-mode {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin-top: 25px;
   h4 {
+    color: #1A1A1A;
     font-size: 18px;
     font-weight: 300;
     line-height: normal;
@@ -297,3 +355,5 @@ body.dark-mode {
   flex-direction: column;
   gap: 9px;
 }
+/*******************************************************************/
+/**RESPONSIVE**/
