@@ -2,6 +2,7 @@
 body {
     font-family: 'Inter', sans-serif;
     transition: 0.5s;
+    cursor: url(/assets/cursor/default.svg), auto;
 }
 .container {
     width: 375px;
@@ -11,7 +12,7 @@ body {
     margin-left: -20px;
     width: 100px;
 }
-header {
+.innerHeader {
     display: flex;
     padding: 5px 9px;
     align-items: center;
@@ -19,6 +20,7 @@ header {
 }
 /******DARKMODE******/
 body.dark-mode {
+  cursor: url(/assets/cursor/darkmode-default.svg), auto;
   background-color: #111;
   .logoSection img {
     content: url(/assets/images/logo-dark.svg);
@@ -357,22 +359,38 @@ body.dark-mode {
 }
 /*******************************************************************/
 /**RESPONSIVE**/
-@media (min-width:400px) {
+@media (min-width:401px) {
+  .hamburger {display: none;}
   body.dark-mode {
     .modalBot {
       & .lightModeBtn {
+        content: url(/assets/images/web-lightmodeBtn.svg); 
         background-color: #111;
         border: none;
       }
     }
-    
-  }
-  .menuWeb {display: inline-block;}
-  .hamburger {display: none;}
-  .lightModeBtn { 
-    content: url(/assets/images/web-lightmodeBtn.svg);    
   }
   .container {
-    
+    width: auto;
   }
+  .header {
+    width: 100%;
+  }
+  .innerHeader {
+    width: 74%;
+    margin: 0 auto;
+  }
+  .modalBot {
+    & .darkModeBtn { 
+      border: transparent;
+    }
+  }
+  .menuWeb {
+    display: flex;
+    ul {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
 }
