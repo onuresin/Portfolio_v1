@@ -13,8 +13,8 @@ function showDetails(titleId, detailId) {
     }
 
     let selectedTitle = document.getElementById(titleId);
-    selectedTitle.style.backgroundColor = "black";
-    selectedTitle.style.color = "white";
+    selectedTitle.style.backgroundColor = "";
+    selectedTitle.style.color = "";
     selectedTitle.classList.add('selected');
 
     let selectedDetail = document.getElementById(detailId);
