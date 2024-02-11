@@ -357,3 +357,22 @@ body.dark-mode {
 }
 /*******************************************************************/
 /**RESPONSIVE**/
+@media (min-width:400px) {
+  body.dark-mode {
+    .modalBot {
+      & .lightModeBtn {
+        background-color: #111;
+        border: none;
+      }
+    }
+    
+  }
+  .menuWeb {display: inline-block;}
+  .hamburger {display: none;}
+  .lightModeBtn { 
+    content: url(/assets/images/web-lightmodeBtn.svg);    
+  }
+  .container {
+    
+  }
+}
