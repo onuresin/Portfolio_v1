@@ -409,6 +409,7 @@ body.dark-mode {
   .modalBot {
     & .darkModeBtn { 
       border: transparent;
+      background-color: transparent;
     }
   }
   .menuWeb {
@@ -482,5 +483,60 @@ body.dark-mode {
   }
   .title:hover {
      cursor: url(/assets/cursor/Pointer.svg), auto;
+  }
+  .expDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  #projects {
+    width: 75%;
+    margin: 0 auto;
+    gap: 62px;
+  }
+  .projectTitle {
+    width: 100%;
+    
+  }
+  .projectSections {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+  }
+  .projectContent {
+    width: 47%;
+    align-items: start;
+    justify-content: space-around;
+    img {
+      width: 100%;
+    }
+  }
+  .contentText {
+    width: 100%;
+  }
+  .contentLinks a {cursor: url(/assets/cursor/Pointer.svg), auto;}
+  #contact {
+    flex-direction: row;
+    width: 74%;
+    margin: 0 auto;
+    padding-block: 103px 80px;
+    gap: 117px;
+  }
+  .contactLinks {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 12px;
+    
+  }
+  .linksSection1, .linksSection2 {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    a {
+      width: 211px;
+      margin: 0 auto;
+      cursor: url(/assets/cursor/Pointer.svg), auto;
+    }
   }
 }
