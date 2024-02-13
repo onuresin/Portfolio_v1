@@ -2,12 +2,13 @@
 body {
     font-family: 'Inter', sans-serif;
     transition: 0.5s;
-    cursor: url(/assets/cursor/default.svg), auto;
+    cursor: url(/assets/cursor/default.svg), auto;   
 }
 .container {
     width: 375px;
     margin: 0 auto;
 }
+.section-item {scroll-behavior: smooth;}
 .logoSection img {
     margin-left: -20px;
     width: 100px;

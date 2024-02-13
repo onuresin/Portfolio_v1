@@ -1,16 +1,16 @@
 function showDetails(titleId, detailId) {
-    let allTitles = document.getElementsByClassName("title");
-    let allDetails = document.getElementsByClassName("expDetails");
+    let allTitles = document.querySelectorAll(".title");
+    let allDetails = document.querySelectorAll(".expDetails");
 
-    for (let i=0; i < allTitles.length; i++) {
-        allTitles[i].style.backgroundColor = "";
-        allTitles[i].style.color = "";
-        allTitles[i].classList.remove('selected');
-    }
+    allTitles.forEach(title => {
+        title.style.backgroundColor = "";
+        title.style.color = "";
+        title.classList.remove('selected');
+    });
 
-    for (let i=0; i < allDetails.length; i++) {
-        allDetails[i].style.display = 'none';
-    }
+    allDetails.forEach(detail => {
+        detail.style.display = 'none';
+    });
 
     let selectedTitle = document.getElementById(titleId);
     selectedTitle.style.backgroundColor = "";
@@ -20,6 +20,7 @@ function showDetails(titleId, detailId) {
     let selectedDetail = document.getElementById(detailId);
     selectedDetail.style.display = 'block';
 }
+
 window.onload = function() {
     showDetails('title1', 'details1');
 }
