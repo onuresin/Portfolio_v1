@@ -426,6 +426,9 @@
 	 .hamburger {
 		 display: none;
 	}
+	body.dark-mode .selectLang select {
+		color: #fff;
+	}
 	 body.dark-mode .modalBot .lightModeBtn {
 		 content: url(/assets/images/web-lightmodeBtn.svg);
 		 background-color: transparent;
@@ -437,10 +440,14 @@
 	 body.dark-mode .menuWeb ul li a:hover {
 		 border-bottom: 1px solid #fff;
 	}
+	
 	.body.dark-mode .langBtn img {
 		content: url(/assets/images/lang-l.svg);
 	}
-	 .container {
+	body.dark-mode .scroll:hover {
+		opacity: 1;
+	}
+	.container {
 		 width: auto;
 	}
 	 .header {
@@ -452,6 +459,9 @@
 		 padding: 0;
 		 padding-block: 25px;
 	}
+	.scroll:hover {
+		opacity: 1;
+	}
 	 .logoSection img {
 		 width: 17%;
 	}
@@ -459,9 +469,24 @@
 		 border: transparent;
 		 background-color: transparent;
 	}
+	.selectLang select  {
+		border: 0;
+		background: transparent;
+		font-family: 'Inter', sans-serif;
+		cursor: url(/assets/cursor/Pointer.svg), auto;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 24px;
+	}
+	.selectLang select:hover {
+		border-bottom: 1px solid black;
+	}
+	
 	 .menuWeb {
 		 display: flex;
 		 gap: 30px;
+		 align-items: center;
 	}
 	 .menuWeb ul {
 		 display: flex;

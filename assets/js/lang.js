@@ -1,22 +1,17 @@
-const langSelect = document.querySelector('#lang');
+const langSelect = document.querySelectorAll('#lang');
 
-langSelect.addEventListener('change', () => {
-    const lang = langSelect.value;
-    updateTextContent(lang);
+langSelect.forEach(langSelect => {
+    langSelect.addEventListener('change', ()=> {
+        const lang = langSelect.value;
+        updateTextContext(lang);
+    })
 });
 
-function updateTextContent(lang) {
-    if(lang === 'en') {
-        document.querySelector('#lang option[value="en"]').textContent = 'English';
-        document.querySelector('#lang option[value="tr"]').textContent = 'Turkish';
-        document.querySelector('#lang option[value="en"]').selected = true;
+function updateTextContext(lang) {
+    const langOptions = document.querySelectorAll('#lang option');
 
-        document.querySelector('#about h6').textContent = "Hello there! I'm";
-    } else {
-        document.querySelector('#lang option[value="tr"]').textContent = 'Türkçe';
-        document.querySelector('#lang option[value="en"]').textContent = 'English';
-        document.querySelector('#lang option[value="tr"]').selected = true;
-
-        document.querySelector('#about h6').textContent = 'Merhaba, ben';
-    }
+    langOptions.forEach(option => {
+        option.textContent = lang === 'en' ? (option.value === 'en' ? 'English' : 'Turkish') : (option.value === 'tr' ? 'Türkçe' : 'İngilizce')
+    });
+    document.querySelector('#about h6').textContent = lang === 'en' ? "Hello there! I'm" : 'Merhaba, ben';
 }
