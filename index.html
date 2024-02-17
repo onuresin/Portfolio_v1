@@ -9,11 +9,7 @@
     <script src="assets/js/darkmode.js" defer></script>
     <script src="assets/js/jobDetails.js" defer></script>
     <script src="assets/js/scroll.js" defer></script>
-    <script defer> 
-        function changeLanguage() {
-            window.location.href = "index_en.html";
-        } 
-    </script>
+    <script src="assets/js/lang.js" defer></script>
     <title>onuresin.com.tr</title>
 </head>
 <body>
@@ -29,8 +25,16 @@
                         <li><a href="#experience">Deneyimlerim</a></li>
                         <li><a href="#projects">Projeler</a></li>
                         <li><a href="#contact">İletişim</a></li>
-                        <button id="changeLangBtn" onclick="changeLanguage()">İngilizce</button>
                     </ul>
+                    <div class="selectLang">
+                        <form>
+                            <label for="lang"></label>
+                            <select name="lang" id="lang">
+                                <option value="tr" selected>Türkçe</option>
+                                <option value="en">İngilizce</option>
+                            </select>
+                        </form>
+                    </div>
                     <div class="modalBot">
                         <img class="darkModeBtn" src="assets/images/darkmode.svg">
                         <img class="lightModeBtn" src="assets/images/lightmode.svg">
@@ -48,6 +52,7 @@
                             <li><a href="#experience">Deneyimlerim</a></li>
                             <li><a href="#projects">Projeler</a></li>
                             <li><a href="#contact">İletişim</a></li>
+                            <li><a href="#" >TR</a></li>
                         </ul>
                     </div>
                     <div class="modalBot">
