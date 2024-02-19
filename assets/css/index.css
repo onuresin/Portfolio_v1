@@ -170,7 +170,7 @@
 	 width: 100%;
 }
  .modal.active {
-	 background-color: rgba(0, 0, 0, 0.85);
+	 background-color: rgba(0, 0, 0, 1);
 	 margin: 0 auto;
 }
  .modalTop {
@@ -428,7 +428,10 @@
 	body.dark-mode .selectLang select {
 		color: #fff;
 	}
-	 body.dark-mode .modalBot .lightModeBtn {
+	body.dark-mode .selectLang select:hover {
+		border-bottom: 1px solid #fff;
+	}
+	body.dark-mode .modalBot .lightModeBtn {
 		 content: url(/assets/images/web-lightmodeBtn.svg);
 		 background-color: transparent;
 		 border: none;
