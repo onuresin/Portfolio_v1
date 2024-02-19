@@ -54,12 +54,10 @@
  body.dark-mode .modalBot .lightModeBtn {
 	 display: block;
 	 background-color: white;
-	 padding: 5px 8px;
-	 border: 2px solid black;
-	 border-radius: 30%;
+	 padding: 8px 8px;
 }
  body.dark-mode .modal.active {
-	 background-color: rgba(255, 255, 255, 0.65);
+	 background-color: rgba(255, 255, 255, 1);
 }
  body.dark-mode .modalTop ul li a {
 	 color: #1a1a1a;
@@ -162,14 +160,17 @@
 	 width: 50%;
 }
  .hamburger.active + .modal.active {
-	 display: block;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 justify-content: center;
 	 z-index: 999;
 	 top: 0;
 	 left: 0;
 	 width: 100%;
 }
  .modal.active {
-	 background-color: rgba(0, 0, 0, 0.65);
+	 background-color: rgba(0, 0, 0, 0.85);
 	 margin: 0 auto;
 }
  .modalTop {
@@ -198,10 +199,8 @@
 	 display: none;
 }
  .modalBot .darkModeBtn {
-	 background-color: white;
-	 padding: 5px 8px;
-	 border: 2px solid black;
-	 border-radius: 30%;
+
+	 padding: 8x 8px;
 }
 /**********ABOUT*************/
  #about {
