@@ -43,9 +43,8 @@
 }
  body.dark-mode .scroll {
 	 background-color: #111;
-	 opacity: 0.8;
 	 box-shadow: 0px 2px 4px #f0f0f0;
-	 opacity: 0.8;
+	 opacity: 1;
 }
  body.dark-mode .bar {
 	 background-color: #fff;
@@ -129,6 +128,9 @@
 }
 body.dark-mode .modalTop img {
 	content: url(/assets/images/x-black.svg);
+}
+body.dark-mode .linksSection1 h5 {
+	color: #c4c4c4;
 }
  .menuWeb {
 	 display: none;
@@ -415,26 +417,39 @@ body.dark-mode .modalTop img {
 }
  .contactLinks {
 	 display: flex;
+	 flex-direction: column;
 	 gap: 12px;
 }
  .contactLinks a {
-	 display: flex;
-	 padding: 12px 25px;
-	 border: 1px solid #c6c6c6;
-	 gap: 10px;
-	 text-decoration: none;
-	 color: #1a1a1a;
-	 font-size: 16px;
-	 font-style: normal;
-	 font-weight: 300;
-	 line-height: 24px;
+	display: flex;
+	justify-content: center;
+	padding-block: 12px;
+	border: 1px solid #c6c6c6;
+	gap: 10px;
+	text-decoration: none;
+	color: #1a1a1a;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 24px;
 	/* 150% */
 }
- .linksSection1, .linksSection2 {
+ .linksSection2 {
 	 display: flex;
 	 flex-direction: column;
 	 gap: 9px;
 }
+.linksSection1 {
+	padding: 12px 25px;
+	border:1px solid #c6c6c6 ;
+	line-height: 24px;
+	padding-block: 12px;
+}
+.linksSection1 h5 {
+	font-size: 17px;
+	font-weight: 300;
+}
+.linksSection1 img {display: none;}
 /*******************************************************************/
 /**RESPONSIVE**/
  @media (min-width: 401px) {
@@ -460,7 +475,9 @@ body.dark-mode .modalTop img {
 	 body.dark-mode .menuWeb ul li a:hover {
 		 border-bottom: 1px solid #fff;
 	}
-	
+	body.dark-mode .linksSection1 img {
+		content: url(/assets/images/mail-dark.svg);
+	}
 	.body.dark-mode .langBtn img {
 		content: url(/assets/images/lang-l.svg);
 	}
@@ -616,12 +633,29 @@ body.dark-mode .modalTop img {
 	}
 	 .contactLinks {
 		 display: flex;
-		 flex-direction: row;
+		 flex-direction: column;
+		 align-items: center;
 		 width: 80%;
 		 gap: 12px;
 		 justify-content: center;
 	}
-	 .linksSection1, .linksSection2 {
+	.linksSection1 img {display: block;}
+	.linksSection1 {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		border: 1px solid #c6c6c6;
+		padding: 9px 25px;
+		width: 53%;
+		align-items: center;
+	}
+	.linksSection1 h5 {
+		color: #1a1a1a;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: normal;
+	}
+	.linksSection2 {
 		 display: flex;
 		 flex-direction: row;
 		 gap: 12px;
@@ -633,7 +667,7 @@ body.dark-mode .modalTop img {
 		 padding: 9px 25px;
 	}
 	 .scroll {
-		 height: 127px;
+		 height: 105px;
 	}
 	.langBtn {
 		display: flex;
@@ -641,4 +675,4 @@ body.dark-mode .modalTop img {
 		gap: 5px;
 	}
 }
- 
+/*900px*/
