@@ -23,7 +23,7 @@
 }
  .scroll {
 	 background-color: #f0f0f0;
-	 opacity: 0.8;
+	 opacity: 1;
 	 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
 	 height: 60px;
 }
@@ -127,6 +127,9 @@
  body.dark-mode .contactLinks a {
 	 color: #c4c4c4;
 }
+body.dark-mode .modalTop img {
+	content: url(/assets/images/x-black.svg);
+}
  .menuWeb {
 	 display: none;
 }
@@ -166,20 +169,33 @@
 	 flex-direction: column;
 	 align-items: center;
 	 justify-content: center;
+	 gap: 12px;
 	 z-index: 999;
 	 top: 0;
 	 left: 0;
 	 width: 100%;
 }
  .modal.active {
-	 background-color: rgba(0, 0, 0, 1);
+	 background-color: rgba(0, 0, 0, 0.95);
 	 margin: 0 auto;
 }
  .modalTop {
 	 display: flex;
 	 align-items: center;
-	 padding: 28px 24px;
+	 padding-block: 28px;
 	 justify-content: center;
+}
+.modalTop img {
+	width: 79px;
+ 	position: absolute;
+  	right: 0;
+  	top: 0;
+  	padding: 25px 28px;
+}
+.modalTop ul {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
  .modalTop ul li {
 	 list-style: none;
