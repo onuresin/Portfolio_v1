@@ -11,9 +11,11 @@
 	 width: 375px;
 	 margin: 0 auto;
 }
+.logoSection {
+	width: 64px;
+}
  .logoSection img {
-	 margin-left: -20px;
-	 width: 100px;
+	 width: 100%;
 }
  header {
 	 position: sticky;
@@ -463,9 +465,6 @@
 	}
 	.scroll:hover {
 		opacity: 1;
-	}
-	 .logoSection img {
-		 width: 17%;
 	}
 	 .modalBot .darkModeBtn {
 		 border: transparent;
