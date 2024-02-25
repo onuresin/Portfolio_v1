@@ -218,8 +218,10 @@ body.dark-mode .linksSection1 h5 {
  .modalBot .lightModeBtn {
 	 display: none;
 }
+#langModal {
+	z-index: 999;
+}
  .modalBot .darkModeBtn {
-
 	 padding: 8x 8px;
 }
 /**********ABOUT*************/
@@ -484,6 +486,9 @@ body.dark-mode .linksSection1 h5 {
 	body.dark-mode .scroll:hover {
 		opacity: 1;
 	}
+	body.dark-mode .projectContent img:hover {
+		box-shadow: 0 4px 8px rgba(255, 2555, 255, 0.5);
+	}
 	.container {
 		 width: auto;
 	}
@@ -617,6 +622,14 @@ body.dark-mode .linksSection1 h5 {
 	 .projectContent img {
 		 width: 100%;
 	}
+	.projectContent img {
+		transition: transform 0.3s, border-radius 0.3s, box-shadow 0.3s;
+	}
+	.projectContent img:hover {
+		border-radius: 8px;
+		transform: translateY(-22px);
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	}
 	 .contentText {
 		 width: 100%;
 	}
@@ -633,11 +646,8 @@ body.dark-mode .linksSection1 h5 {
 	}
 	 .contactLinks {
 		 display: flex;
-		 flex-direction: column;
 		 align-items: center;
 		 width: 80%;
-		 gap: 12px;
-		 justify-content: center;
 	}
 	.linksSection1 img {display: block;}
 	.linksSection1 {
