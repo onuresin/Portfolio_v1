@@ -677,7 +677,11 @@ body.dark-mode .linksSection1 h5 {
 		 padding: 9px 25px;
 	}
 	 .scroll {
-		 height: 105px;
+		height: 65px;
+
+	}
+	.scroll .innerHeader {
+		padding-block: 5px;
 	}
 	.langBtn {
 		display: flex;
