@@ -228,6 +228,12 @@ body.dark-mode .linksSection1 h5 {
  .modalBot .darkModeBtn {
 	 padding: 8x 8px;
 }
+.selectLang {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	padding-bottom: 25px;
+}
 /**********ABOUT*************/
  #about {
 	 display: flex;
@@ -379,8 +385,9 @@ body.dark-mode .linksSection1 h5 {
  .textTop h4 {
 	 color: #1a1a1a;
 	 font-size: 18px;
-	 font-weight: 300;
+	 font-weight: bold;
 	 line-height: normal;
+	 
 }
  .contentLinks {
 	 display: flex;
