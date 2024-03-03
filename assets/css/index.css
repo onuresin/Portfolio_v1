@@ -55,7 +55,7 @@
  body.dark-mode .modalBot .lightModeBtn {
 	 display: block;
 	 background-color: white;
-	 padding: 8px 8px;
+	 width: 32px;
 }
  body.dark-mode .modal.active {
 	 background-color: rgba(255, 255, 255, 1);
@@ -213,10 +213,14 @@ body.dark-mode .linksSection1 h5 {
 	 display: flex;
 	 flex-direction: column;
 	 align-items: center;
-	 padding: 8px 2px;
+}
+.modalBot.darkModeBtn {
+	width: 24px;
 }
  .modalBot .lightModeBtn {
-	 display: none;
+	width: 24px;
+	height: 24px;
+	display: none;
 }
 #langModal {
 	z-index: 999;
@@ -467,7 +471,7 @@ body.dark-mode .linksSection1 h5 {
 		border-bottom: 1px solid #fff;
 	}
 	body.dark-mode .modalBot .lightModeBtn {
-		 content: url(/assets/images/web-lightmodeBtn.svg);
+		 content: url(/assets/images/lightmode.svg);
 		 background-color: transparent;
 		 border: none;
 	}
@@ -507,6 +511,7 @@ body.dark-mode .linksSection1 h5 {
 	 .modalBot .darkModeBtn {
 		 border: transparent;
 		 background-color: transparent;
+		 width: 32px;
 	}
 	.selectLang select  {
 		border: 0;
@@ -516,7 +521,7 @@ body.dark-mode .linksSection1 h5 {
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 300;
-		line-height: 24px;
+		line-height: 32px;
 	}
 	.selectLang select:hover {
 		border-bottom: 1px solid black;
