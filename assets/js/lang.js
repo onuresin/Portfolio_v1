@@ -58,5 +58,13 @@ function updateTextContext(lang, langSelect) {
     document.querySelector('.dictionMid h5').textContent = lang === 'en' ? "Application that teaches the pronunciation and spelling of English words" : "İngilizce kelimelerin okunuşlarını ve yazılışlarını öğreten uygulama"
     document.querySelector('.newsTop h4').textContent = lang === 'en' ? "Newslatter Registration" : "Bülten Kaydı"
     document.querySelector('.newsMid h5').textContent = lang === 'en' ? "A simple newsletter signup example. An example where you can go to the registration screen with a correctly spelled e-mail address." : "Basit bir bültene kayıt olma örneği. Doğru yazılmış bir mail adresi ile kayıt ekranına geçebildiğiniz bir örnek."
+    document.querySelector('.newsMid h6').textContent = lang === 'en' ? "React - Responsive Design" : "React - Responsive Tasarım"
+    document.querySelector('.devJobTop h4').textContent = lang === 'en' ? "Devjobs Web App Project" : "Devjobs Web App Projesi"
+    document.querySelector('.devJobMid h5').textContent = lang === 'en' ? "In this job board for software developers, you can find part-time or full-time international jobs.":"Yazılımcıları bekleyen bu iş ilanı uygulamasında, yarı zamanlı veya tam zamanlı uluslararası olarak çalışabileceğiniz ilanlar bulunmakta."
+    document.querySelector('.devJobMid h6').textContent = lang === 'en' ? "React / Router - Responsive Design" : "React / Router - Responsive Tasarım"
+    document.querySelector('.photoSnapMid h5').textContent = lang === 'en' ? "PhotoSnap is a paid app. Every photo has a story hidden in it, and it's a platform where you can share these hidden stories with those who follow you.":"PhotoSnap,ücretli bir uygulama. Her fotoğrafın içinde bir öykü gizlidir.Bu gizli öyküleri sizi takip edenlerle paylaşabileceğiniz bir platformdur."
+    document.querySelector('.photoSnapMid h6').textContent = lang === 'en' ? "Only Java Script - CSS Responsive Design":"Sadece Java Script - CSS Responsive Tasarım"
+
+
 
 }  
