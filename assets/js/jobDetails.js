@@ -18,7 +18,7 @@ function showDetails(titleId, detailId) {
     selectedTitle.classList.add('selected');
 
     let selectedDetail = document.getElementById(detailId);
-    selectedDetail.style.display = 'block';
+    selectedDetail.style.display = 'flex';
 }
 
 window.onload = function() {

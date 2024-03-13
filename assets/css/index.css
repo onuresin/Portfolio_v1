@@ -93,6 +93,9 @@
  body.dark-mode .expDetails h5 {
 	 color: #c4c4c4;
 }
+body.dark-mode .expDetails h6 {
+	color: #c4c4c4;
+}
  body.dark-mode .projectTitle h4 {
 	 color: #fff;
 }
@@ -323,6 +326,7 @@ body.dark-mode .linksSection1 h5 {
  .expDetails {
 	 display: flex;
 	 flex-direction: column;
+	 gap: 10px;
 }
  .expDetails .detailsHistory {
 	 display: flex;
@@ -338,11 +342,11 @@ body.dark-mode .linksSection1 h5 {
  .expDetails h4 {
 	 color: #004e93;
 	 font-size: 14px;
-	 font-weight: 300;
+	 font-weight: 500;
 	 line-height: 24px;
 	/* 171.429% */
 }
- .expDetails h5 {
+ .expDetails h5, .expDetails h6 {
 	 color: #1a1a1a;
 	 font-size: 16px;
 	 font-weight: 300;
@@ -614,6 +618,7 @@ body.dark-mode .linksSection1 h5 {
 		 display: flex;
 		 flex-direction: column;
 		 gap: 12px;
+		 width: 63%;
 	}
 	 #projects {
 		 width: 75%;
